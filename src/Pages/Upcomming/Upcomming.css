@@ -1,0 +1,17 @@
+.eventImage1,
+.eventImage2,
+.eventImage3 {
+    width: 95%;
+    transition: .2s;
+}
+
+.event {
+    width: 80%;
+}
+
+.eventImage1:hover,
+.eventImage2:hover,
+.eventImage3:hover {
+    transform: scale(1.2);
+
+}
