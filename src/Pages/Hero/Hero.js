@@ -3,7 +3,7 @@ import bg from './bg.png'
 import './Hero.css'
 const Hero = () => {
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: `url(${bg})` }}>
+        <div className="hero min-h-screen mb-9" style={{ backgroundImage: `url(${bg})` }}>
             <div className="hero-overlay bg-opacity-25"></div>
             {/* <div className="text-center text-neutral-content">
                 <div className="max-w-md">
@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
             </div> */}
 
-            <button className='btn btn-wide explore'>Let's Explore</button>
+            <button className='btn mt-72 btn-wide explore'>Let's Explore</button>
         </div>
     );
 };
