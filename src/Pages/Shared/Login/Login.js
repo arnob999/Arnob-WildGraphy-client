@@ -2,8 +2,8 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <div>
-            <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
+        <div className='flex justify-center'>
+            <div className="max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
                 <h1 className="text-2xl font-bold text-center">Login</h1>
                 <form novalidate="" action="" className="space-y-6 ng-untouched ng-pristine ng-valid">
                     <div className="space-y-1 text-sm">
