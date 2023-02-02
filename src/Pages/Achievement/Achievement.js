@@ -7,7 +7,7 @@ const Achievement = () => {
 
     return (
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
-            <section className="p-6 mb-8 dark:bg-gray-800 dark:text-gray-100">
+            <section className="p-6 my-8 dark:bg-gray-800 dark:text-gray-100">
                 <div className="container mx-auto grid justify-center grid-cols-2 text-center lg:grid-cols-3">
                     <div className="flex flex-col justify-start m-2 lg:m-6">
                         <p className="text-4xl font-bold leading-none lg:text-6xl">{counterOn && <CountUp start={0} end={500} duration={3} delay={0} />}+</p>

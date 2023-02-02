@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from '../../../Layout/Head/Head';
 import Achievement from '../../Achievement/Achievement';
-import Upcomming from '../../Upcomming/Upcomming';
+import Timeline from '../../Timeline/Timeline';
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
             <Head title="Home">
 
             </Head>
-            <Upcomming></Upcomming>
+            <Timeline></Timeline>
             <Achievement></Achievement>
         </div>
     );
