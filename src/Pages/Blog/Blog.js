@@ -17,12 +17,12 @@ const Blog = () => {
                         5.Properties</p>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                    <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</a>
+                    <p rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</p>
                     <div>
-                        <a rel="noopener noreferrer" href="#" className="flex items-center">
+                        <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
                             <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
-                        </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -38,12 +38,12 @@ const Blog = () => {
                     </p>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                    <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</a>
+                    <p rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</p>
                     <div>
-                        <a rel="noopener noreferrer" href="#" className="flex items-center">
+                        <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
                             <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
-                        </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -57,12 +57,12 @@ const Blog = () => {
                     <p className="mt-2">JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine installed. Node.js, on the other hand, is an interpreter or execution environment for the JavaScript programming language. It requires libraries that can be conveniently accessed from JavaScript programming to be more helpful.</p>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                    <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</a>
+                    <p rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</p>
                     <div>
-                        <a rel="noopener noreferrer" href="#" className="flex items-center">
+                        <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
                             <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
-                        </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -76,12 +76,12 @@ const Blog = () => {
                     <p className="mt-2">NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes them. EventLoop is the listener for the EventQueue. If NodeJS can process the request without I/O blocking then the event loop would itself process the request and sends the response back to the client by itself.</p>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                    <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</a>
+                    <p rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Read more...</p>
                     <div>
-                        <a rel="noopener noreferrer" href="#" className="flex items-center">
+                        <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
                             <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
-                        </a>
+                        </p>
                     </div>
                 </div>
             </div>
