@@ -25,7 +25,7 @@ const Header = () => {
                     <li><Link to={'/'}>My Clicks</Link></li>
                     <li><Link to={'/blog'}>Blogs</Link></li>
                     <li><Link to={'/login'}>Login</Link></li>
-                    <li><Link to={'/joinus'}>Join US</Link></li>
+                    <li><Link to={'/joinUs'}>Join Us</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
