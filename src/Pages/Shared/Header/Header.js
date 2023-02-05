@@ -1,7 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+    console.log(user?.uid);
+    const handleLogout = () => {
+        logOut()
+            .then()
+            .then(err => console.error(err))
+    }
+
+    const toggler = <>
+        {
+            user?.uid ? <li><button onClick={handleLogout}>Logout</button></li> : <>
+                <li><Link to={'/login'}>Login</Link></li>
+                <li><Link to={'/joinus'}>Join US</Link></li>
+            </>
+
+        }
+    </>
+
+
     return (
         <div className="navbar bg-base-100 mb-3">
             <div className="navbar-start">
@@ -13,8 +34,7 @@ const Header = () => {
                         <li><Link to={'/'}>Home</Link></li>
                         <li><Link to={'/'}>My Clicks</Link></li>
                         <li><Link to={'/blog'}>Blogs</Link></li>
-                        <li><Link to={'/login'}>Login</Link></li>
-                        <li><Link to={'/joinus'}>Join US</Link></li>
+                        {toggler}
                     </ul>
                 </div>
                 <Link to='/' className="btn w-36 pb-2 btn-ghost normal-case text-xl"><img className='rounded-lg' src="./asset/brandLogo/logo.png" alt="" /></Link>
@@ -24,8 +44,7 @@ const Header = () => {
                     <li><Link to={'/'}>Home</Link></li>
                     <li><Link to={'/'}>My Clicks</Link></li>
                     <li><Link to={'/blog'}>Blogs</Link></li>
-                    <li><Link to={'/login'}>Login</Link></li>
-                    <li><Link to={'/joinUs'}>Join Us</Link></li>
+                    {toggler}
                 </ul>
             </div>
             <div className="navbar-end">

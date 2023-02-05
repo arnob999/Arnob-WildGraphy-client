@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const JoinUs = () => {
 
     const { createUser } = useContext(AuthContext)
 
-    const location = useLocation()
-    const navigate = useNavigate()
+    // const location = useLocation()
+    // const navigate = useNavigate()
 
-    const from = location.state?.from?.pathname || '/';
+    // const from = location.state?.from?.pathname || '/';
 
     const handleJoinUs = event => {
         event.preventDefault();
@@ -20,10 +20,12 @@ const JoinUs = () => {
         createUser(email, password)
             .then(result => {
                 const user = result.user
+                console.log(user)
+                form.reset()
             })
             .catch(err => console.error(err));
 
-        form.reset()
+
     }
 
 
@@ -38,12 +40,12 @@ const JoinUs = () => {
                     </div>
                     <div className="space-y-1 text-sm">
                         <label for="password" className="block dark:text-gray-400">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
+                        <input type="password" name="password" placeholder="Password" autocomplete="on" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
                         <div className="flex justify-end text-xs dark:text-gray-400">
                             <Link rel="noopener noreferrer" to={'/'}>Forgot Password?</Link>
                         </div>
                     </div>
-                    <button className="block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400">Join Us</button>
+                    <input className='block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400' type="submit" value="Join Us" />
                 </form>
                 <div className="flex items-center pt-4 space-x-1">
                     <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
