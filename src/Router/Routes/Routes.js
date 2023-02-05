@@ -5,6 +5,7 @@ import Home from "../../Pages/Home/Home/Home";
 import NotFound from "../../Pages/NotFound/NotFound";
 import JoinUs from "../../Pages/Shared/JoinUs/JoinUs";
 import Login from "../../Pages/Shared/Login/Login";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/blog',
-                element: <Blog></Blog>
+                element: <PrivateRoute><Blog></Blog></PrivateRoute>
             },
             {
                 path: '/joinUs',
