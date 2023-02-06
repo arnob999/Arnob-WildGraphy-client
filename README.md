@@ -9,4 +9,8 @@ Main Layout & Used Technology:
         i.React Countup
         ii.React Scroll Trigger
     6.I use react helmet to show dynamic title on the basis of routes
-    7.
+    7.I use private route as we need
+    8.I implemented context api here
+    9.There is a components of "My CLicks"(service pages of this website)
+    10.Homepage will show only 6 of them by using .limit in backend when fetching
+    11.
