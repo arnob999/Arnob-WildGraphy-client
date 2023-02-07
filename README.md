@@ -13,4 +13,5 @@ Main Layout & Used Technology:
     8.I implemented context api here
     9.There is a components of "My CLicks"(service pages of this website)
     10.Homepage will show only 6 of them by using .limit in backend when fetching
-    11.
+    11.All service will show when we click on all service/view more
+    12.If we click on image it will scale up by using react-image-view package

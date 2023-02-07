@@ -28,7 +28,6 @@ const Login = () => {
 
     }
 
-
     return (
         <div className='flex justify-center'>
             <div className="max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
