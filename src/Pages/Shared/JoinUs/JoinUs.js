@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { setAuthToken } from '../../../api/auth';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
@@ -7,10 +7,10 @@ const JoinUs = () => {
 
     const { createUser, googleSignIn } = useContext(AuthContext)
 
-    // const location = useLocation()
-    // const navigate = useNavigate()
+    const location = useLocation()
+    const navigate = useNavigate()
 
-    // const from = location.state?.from?.pathname || '/';
+    const from = location.state?.from?.pathname || '/';
 
     const handleGoogleSignIn = () => {
         googleSignIn()
@@ -19,6 +19,7 @@ const JoinUs = () => {
                 console.log(user);
                 setAuthToken(user)
             })
+        navigate(from, { replace: true })
     }
 
 
@@ -35,10 +36,11 @@ const JoinUs = () => {
             .then(result => {
                 const user = result.user
                 console.log(user)
+                setAuthToken(user)
                 form.reset()
             })
             .catch(err => console.error(err));
-
+        navigate(from, { replace: true })
 
     }
 

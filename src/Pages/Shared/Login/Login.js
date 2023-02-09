@@ -19,6 +19,7 @@ const Login = () => {
                 console.log(user);
                 setAuthToken(user)
             })
+        navigate(from, { replace: true })
     }
 
 

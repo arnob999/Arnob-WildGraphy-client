@@ -21,7 +21,7 @@ const Blog = () => {
                     <div>
                         <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
-                            <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
+                            <span className="hover:underline dark:text-gray-400">Arnob</span>
                         </p>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const Blog = () => {
                     <div>
                         <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
-                            <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
+                            <span className="hover:underline dark:text-gray-400">Arnob</span>
                         </p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const Blog = () => {
                     <div>
                         <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
-                            <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
+                            <span className="hover:underline dark:text-gray-400">Arnob</span>
                         </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const Blog = () => {
                     <div>
                         <p rel="noopener noreferrer" href="#" className="flex items-center">
                             <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
-                            <span className="hover:underline dark:text-gray-400">Leroy Jenkins</span>
+                            <span className="hover:underline dark:text-gray-400">Arnob</span>
                         </p>
                     </div>
                 </div>

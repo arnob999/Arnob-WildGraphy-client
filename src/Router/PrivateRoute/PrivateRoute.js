@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import SkeletonLoader from '../../Layout/Skeleton Loader/SkeletonLoader';
 
 
 const PrivateRoute = ({ children }) => {
@@ -9,7 +10,7 @@ const PrivateRoute = ({ children }) => {
     const location = useLocation()
 
     if (loading) {
-        return <button className="btn loading">loading</button>
+        return <SkeletonLoader></SkeletonLoader>
     }
 
     if (user) {
