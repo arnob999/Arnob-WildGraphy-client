@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main/Main";
 import Blog from "../../Pages/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
+import MyClick from "../../Pages/MyClick/MyClick";
 import NotFound from "../../Pages/NotFound/NotFound";
 import JoinUs from "../../Pages/Shared/JoinUs/JoinUs";
 import Login from "../../Pages/Shared/Login/Login";
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: '/joinUs',
                 element: <JoinUs></JoinUs>
+            },
+            {
+                path: '/myCLick',
+                element: <MyClick></MyClick>
             }
         ]
     }
