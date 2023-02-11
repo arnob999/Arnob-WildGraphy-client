@@ -35,7 +35,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myCLick',
-                element: <MyClick></MyClick>
+                element: <MyClick></MyClick>,
+                loader: () => fetch('http://localhost:5000/photos')
             }
         ]
     }
