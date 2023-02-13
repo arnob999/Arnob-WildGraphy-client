@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main/Main";
 import Blog from "../../Pages/Blog/Blog";
+import CardDetails from "../../Pages/Components/CardDetails/CardDetails";
 import Home from "../../Pages/Home/Home/Home";
 import MyClick from "../../Pages/MyClick/MyClick";
 import NotFound from "../../Pages/NotFound/NotFound";
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
                 path: '/myCLick',
                 element: <MyClick></MyClick>,
                 loader: () => fetch('http://localhost:5000/photos')
+            },
+            {
+                path: '/photos/:id',
+                element: <CardDetails></CardDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/photos/63e48d1979cd0d56f565298d${params.id}`)
             }
         ]
     }

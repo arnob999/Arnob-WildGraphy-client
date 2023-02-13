@@ -15,3 +15,4 @@ Main Layout & Used Technology:
     10.Homepage will show only 6 of them by using .limit in backend when fetching
     11.All service will show when we click on all service/view more
     12.If we click on image it will scale up by using react-image-view package
+    13.I use react-icons for some of the icon i used here
