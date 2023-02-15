@@ -6,7 +6,7 @@ const HomePhoto = () => {
     const [photos, setPhotos] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/photo')
+        fetch('https://arnob-wild-graphy-server.vercel.app/photo')
             .then(res => res.json())
             .then(data => setPhotos(data))
     }, [])

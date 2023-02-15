@@ -38,12 +38,12 @@ const router = createBrowserRouter([
             {
                 path: '/myCLick',
                 element: <MyClick></MyClick>,
-                loader: () => fetch('http://localhost:5000/photos')
+                loader: () => fetch('https://arnob-wild-graphy-server.vercel.app/photos')
             },
             {
                 path: '/details/:id',
                 element: <DetailReview></DetailReview>,
-                loader: ({ params }) => fetch(`http://localhost:5000/photos/${params.id}`)
+                loader: ({ params }) => fetch(`https://arnob-wild-graphy-server.vercel.app/photos/${params.id}`)
             }
         ]
     }
