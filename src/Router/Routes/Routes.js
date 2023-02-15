@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main/Main";
 import Blog from "../../Pages/Blog/Blog";
 import CardDetails from "../../Pages/Components/CardDetails/CardDetails";
+import DetailReview from "../../Pages/DetailReview/DetailReview";
 import Home from "../../Pages/Home/Home/Home";
 import MyClick from "../../Pages/MyClick/MyClick";
 import NotFound from "../../Pages/NotFound/NotFound";
@@ -40,8 +41,8 @@ const router = createBrowserRouter([
                 loader: () => fetch('http://localhost:5000/photos')
             },
             {
-                path: '/photos/:id',
-                element: <CardDetails></CardDetails>,
+                path: '/details/:id',
+                element: <DetailReview></DetailReview>,
                 loader: ({ params }) => fetch(`http://localhost:5000/photos/${params.id}`)
             }
         ]

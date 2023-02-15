@@ -25,7 +25,7 @@ const Card = ({ photo }) => {
 
                 <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
                     <p className="text-lg flex font-bold text-white">Rating:  <span className='flex'>  {rating}<AiFillStar className='text-yellow-400' /></span> </p>
-                    <Link to={`/photos/${_id}`}>
+                    <Link to={`/details/${_id}`}>
                         <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Show Details</button>
                     </Link>
                 </div>
