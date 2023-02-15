@@ -1,8 +1,9 @@
 import React from 'react';
 import './Card.css'
 import { AiFillStar } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 const Card = ({ photo }) => {
-    const { title, description, img, price, rating } = photo;
+    const { _id, title, description, img, price, rating } = photo;
 
     return (
 
@@ -24,7 +25,9 @@ const Card = ({ photo }) => {
 
                 <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
                     <p className="text-lg flex font-bold text-white">Rating:  <span className='flex'>  {rating}<AiFillStar className='text-yellow-400' /></span> </p>
-                    <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Show Details</button>
+                    <Link to={`/photos/${_id}`}>
+                        <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Show Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

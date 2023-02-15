@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             {
                 path: '/photos/:id',
                 element: <CardDetails></CardDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/photos/63e48d1979cd0d56f565298d${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/photos/${params.id}`)
             }
         ]
     }
