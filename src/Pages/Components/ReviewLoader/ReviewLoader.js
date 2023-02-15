@@ -2,6 +2,8 @@ import React from 'react';
 
 const ReviewLoader = ({ pictureDetails }) => {
     console.log(pictureDetails)
+
+    const { _id, title, description, img, price, rating } = pictureDetails
     return (
 
         <div className="overflow-x-auto mt-5">
@@ -24,23 +26,23 @@ const ReviewLoader = ({ pictureDetails }) => {
 
                     <tr>
                         <th>1</th>
-                        <td>Cy Ganderton</td>
-                        <td>Quality Control Specialist</td>
-                        <td>Blue</td>
+                        <td>{title}</td>
+                        <td>Amazing picture</td>
+                        <td>{price} $</td>
                     </tr>
 
                     <tr>
                         <th>2</th>
-                        <td>Hart Hagerty</td>
-                        <td>Desktop Support Technician</td>
-                        <td>Purple</td>
+                        <td>{title}</td>
+                        <td>This tiger is so cute</td>
+                        <td>{price} $</td>
                     </tr>
 
                     <tr>
                         <th>3</th>
-                        <td>Brice Swyre</td>
-                        <td>Tax Accountant</td>
-                        <td>Red</td>
+                        <td>{title}</td>
+                        <td>This scene of dusk was just phenomenal</td>
+                        <td>{price} $</td>
                     </tr>
                 </tbody>
             </table>

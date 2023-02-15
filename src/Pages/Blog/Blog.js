@@ -1,7 +1,10 @@
 import React from 'react';
+import Head from '../../Layout/Head/Head';
 const Blog = () => {
     return (
+
         <div className="dark:bg-gray-800 dark:text-gray-100 pt-8 rounded-lg">
+            <Head title="Blog" />
             <div className="container max-w-4xl px-10 my-5 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
                 <div className="flex items-center justify-between">
                     <span className="text-sm dark:text-gray-400">Jun 1, 2020</span>

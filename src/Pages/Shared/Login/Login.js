@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { setAuthToken } from '../../../api/auth';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import Head from '../../../Layout/Head/Head';
 
 const Login = () => {
 
@@ -41,6 +42,7 @@ const Login = () => {
 
     return (
         <div className='flex justify-center'>
+            <Head title="Login" />
             <div className="max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100">
                 <h1 className="text-2xl font-bold text-center">Login</h1>
                 <form onSubmit={handleLogin} className="space-y-6 ng-untouched ng-pristine ng-valid">
