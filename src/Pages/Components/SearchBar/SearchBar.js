@@ -8,7 +8,16 @@ const SearchBar = () => {
     const fetchData = (value) => {
         fetch("http://localhost:5000/photos")
             .then(res => res.json())
-            .then(data => { console.log(data) })
+            .then(data => {
+                const results = data.filter(photo => {
+                    return (
+                        value &&
+                        photo &&
+                        photo.title.toLowerCase().includes(value)
+                    )
+                });
+                console.log(results);
+            })
     }
 
     const handleChange = (value) => {
