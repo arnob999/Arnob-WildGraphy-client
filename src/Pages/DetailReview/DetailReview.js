@@ -4,7 +4,6 @@ import ReviewLoader from '../Components/ReviewLoader/ReviewLoader';
 import { useLoaderData } from 'react-router-dom';
 const DetailReview = () => {
     const pictureDetails = useLoaderData();
-    console.log(pictureDetails)
     return (
         <div>
             <CardDetails pictureDetails={pictureDetails}></CardDetails>

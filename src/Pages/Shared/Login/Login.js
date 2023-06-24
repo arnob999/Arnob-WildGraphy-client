@@ -16,7 +16,6 @@ const Login = () => {
         googleSignIn()
             .then(result => {
                 const user = result.user;
-                console.log(user);
                 setAuthToken(user)
             })
         navigate(from, { replace: true })

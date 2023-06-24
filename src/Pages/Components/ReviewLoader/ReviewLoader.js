@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ReviewLoader = ({ pictureDetails }) => {
-    console.log(pictureDetails)
+
     return (
 
         <div className="overflow-x-auto mt-5">

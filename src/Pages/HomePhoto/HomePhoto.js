@@ -10,7 +10,6 @@ const HomePhoto = () => {
             .then(res => res.json())
             .then(data => setPhotos(data))
     }, [])
-    console.log(photos)
     return (
         <>
             <div className='flex justify-center flex-col'>
