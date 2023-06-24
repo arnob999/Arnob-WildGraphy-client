@@ -45,7 +45,6 @@ const SkeletonLoader = () => {
 
                     <div className="flex justify-between mt-6 item-center">
                         <p className="w-10 h-2 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
-
                         <div className="h-4 bg-gray-200 rounded-lg w-28 dark:bg-gray-700"></div>
                     </div>
                 </div>
