@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillStar } from "react-icons/ai";
 const CardDetails = ({ pictureDetails }) => {
 
-    const { _id, title, description, img, price, rating } = pictureDetails
+    const { title, description, img, price, rating } = pictureDetails
 
     return (
         <div>
