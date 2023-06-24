@@ -1,5 +1,6 @@
 import React from 'react';
 //this is the skeleton loader
+
 const SkeletonLoader = () => {
     return (
         <>
